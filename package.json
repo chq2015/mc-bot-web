@@ -9,8 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
+    "express": "^5.2.1",
     "mineflayer": "^4.37.1",
     "mineflayer-auto-eat": "^5.0.3",
     "mineflayer-pathfinder": "^2.4.5"
