@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mcbot</title>
+    <link rel="stylesheet" href="webcss.css">
+</head>
+<body>
+    <h1 class="title">mc机器人简易配置表单</h1>
+    <!-- 服务器配置 -->
+    <div class="server-config">
+        <h2>服务器配置</h2>
+        <label>
+            服务器 IP：
+            <input type="text" name="host" value="127.0.0.1">
+        </label>
+        <br><br>
+        <label>
+            端口：
+            <input name="port" value="25565">
+        </label>
+        <br><br>
+        <label>
+            设置正版验证:
+            <select name="online">
+                <option value="true">服务器开启正版验证</option>
+                <option value="false">服务器关闭正版验证</option>
+            </select>
+        </label>
+    </div>
+    <!-- bot配置 -->
+    <div class="bot-config">
+        <h2>Bot 配置</h2>
+        <label>
+            Bot名称（游戏内显示）
+           <input type="text" name="bot-name" value="" placeholder="Bot名字（如：huahua）">
+        </label>
+        <br><br>
+        <label>
+            Bot加入游戏提示（机器人在加入游戏后会在公屏发送该文本）
+            <input type="text" name="bot-start-talk" value="" placeholder="  Bot加入游戏提示文本（如：我来啦）" maxlength="100">
+        </label>
+        <br><br>
+        <label>
+            Bot行为模式
+            <select name="bot-mode">
+                <option value="bot-command">指令触发</option>
+                <option value="bot-stand">挂机</option>
+            </select>
+        </label>
+    </div>
+</body>
+</html>
